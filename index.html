@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+    <div class="cont">
+
+        <!-- Left  -->
+
+        <div class="left">
+
+            <div class="top">
+
+                <div class="spot"><img src="spotifylogo.svg" alt="img"></div>
+
+                <div class="home">
+                    <div> <img src="home.svg" alt="home"> </div>
+                    <div class="hometxt">Home</div>
+                </div>
+
+                <div class="search">
+                    <div> <img src="search.svg" alt="search"></div>
+                    <div class="searchtxt">Search</div>
+                </div>
+
+            </div>
+
+            <div class="bottom">
+
+                <div class="lib">
+                    <div><img src="library.svg" alt="lib"></div>
+                    <div class="libtxt">Your Library</div>
+                    <div class="close"><img src="close.svg" alt="plus"></div>
+                </div>
+
+                <div class="b2">
+                    <div class="b2box">Playlists</div>
+                    <div class="b2box">Artists</div>
+                    <div class="b2box">Albums</div>
+                </div>
+
+                <div class="liked">
+                    <div><img style="border-radius: 3px;" width="30px" height="30px" src="liked.png" alt="img"></div>
+                    <div class="likedtxt">Liked songs</div>
+                </div>
+
+                <!-- songlist  -->
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right  -->
+
+        <div class="right">
+
+            <div class="rtop">
+
+                <div class="hamburger"><img src="hamburger.svg" alt="img"></div>
+                <div class="fb b"><img style="margin-top: 7px;" src="leftarrow.svg" alt="img"></div>
+                <div class="fb f"><img style="margin-top: 7px;" src="rightarrow.svg" alt="img"></div>
+                <div class="signup">Sign up</div>
+                <button class="login">Log in</button>
+
+            </div>
+
+            <div class="rbody">
+
+                <!-- songcards top  -->
+                <div class="songcardcont">
+
+                    <div data-folder="dailymix1" class="songcard dailymix1">
+                        <div><img width="40px" height="40px" src="cards/dailymix1.png" alt="img"></div>
+                        <div class="songcardtxt">Daily Mix 1</div>
+                    </div>
+
+                    <div class="songcard dailymix2">
+                        <div><img width="40px" height="40px" src="cards/dailymix2.png" alt="img"></div>
+                        <div class="songcardtxt">Daily Mix 2</div>
+                    </div>
+
+                    <div class="songcard dailymix3">
+                        <div><img width="40px" height="40px" src="cards/dailymix3.png" alt="img"></div>
+                        <div class="songcardtxt">Daily Mix 3</div>
+                    </div>
+
+                    <div class="songcard dailymix4">
+                        <div><img width="40px" height="40px" src="cards/dailymix4.png" alt="img"></div>
+                        <div class="songcardtxt">Daily Mix 4</div>
+                    </div>
+
+                    <div class="songcard dailymix5">
+                        <div><img width="40px" height="40px" src="cards/dailymix5.png" alt="img"></div>
+                        <div class="songcardtxt">Daily Mix 5</div>
+                    </div>
+
+                    <div class="songcard dailymix6">
+                        <div><img width="40px" height="40px" src="cards/dailymix6.png" alt="img"></div>
+                        <div class="songcardtxt">Daily Mix 6</div>
+                    </div>
+
+                    <div data-folder="likedsongs" class="songcard likedcard">
+
+                        <div><img width="40px" height="40px" src="liked.png" alt="img"></div>
+                        <div class="songcardtxt">Liked Songs</div>
+
+                    </div>
+
+                    <div class="songcard">
+                        <div><img width="40px" height="40px" src="cards/soulmix.png" alt="img"></div>
+                        <div class="songcardtxt">Soul Mix</div>
+                    </div>
+
+                </div>
+
+                <!-- Made for you song banners -->
+
+                <h2>Made For You </h1>
+
+                    <div class="songbannercont">
+
+                        <div data-folder="dailymix1" class="songbanner dailymix1">
+                            <div><img height="150px" width="150px" src="cards/dailymix1.png" alt="img"></div>
+                            <div class="songbannertxt1">Daily Mix 1</div>
+                            <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div>
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/dailymix2.png" alt="img"></div>
+                            <div class="songbannertxt1">Daily Mix 2</div>
+                            <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div>
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/dailymix3.png" alt="img"></div>
+                            <div class="songbannertxt1">Daily Mix 3</div>
+                            <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div>
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/dailymix4.png" alt="img"></div>
+                            <div class="songbannertxt1">Daily Mix 4</div>
+                            <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div>
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/dailymix5.png" alt="img"></div>
+                            <div class="songbannertxt1">Daily Mix 5</div>
+                            <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div>
+                        </div>
+
+                    </div>
+
+                    <!-- your top mixes banner -->
+                    <h2>Your Top Mixes</h2>
+
+                    <div class="songbannercont">
+
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/romanticmix.png" alt="img"></div>
+                            <div class="songbannertxt1">Romantic Mix </div>
+                            <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div>
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/soulmix.png" alt="img"></div>
+                            <div class="songbannertxt1">Soul Mix </div>
+                            <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div>
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/popmixes.png" alt="img"></div>
+                            <div class="songbannertxt1">Pop Mix </div>
+                            <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div>
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/discoverweekly.png" alt="img"></div>
+                            <div class="songbannertxt1">Discover Weekly</div>
+                            <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div>
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/retrodadar.png" alt="img"></div>
+                            <div class="songbannertxt1">Retro Radar</div>
+                            <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div>
+                        </div>
+
+                    </div>
+
+                    <!-- Best artists song banners  -->
+                    <h2>Best of Artists</h2>
+
+
+                    <div class="songbannercont">
+
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/rahatfateh.png" alt="img"></div>
+                            <div class="songbannertxt1">This is Rahat Fateh Ali Khan </div>
+                            <!-- <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div> -->
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/arijit.png" alt="img"></div>
+                            <div class="songbannertxt1">This is Arijit Singh </div>
+                            <!-- <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div> -->
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/kk.png" alt="img"></div>
+                            <div class="songbannertxt1">This is KK </div>
+                            <!-- <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div> -->
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/honey.png" alt="img"></div>
+                            <div class="songbannertxt1">This is Honey Singh</div>
+                            <!-- <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div> -->
+                        </div>
+                        <div class="songbanner">
+                            <div><img height="150px" width="150px" src="cards/atif.png" alt="img"></div>
+                            <div class="songbannertxt1">This is Atif Aslam</div>
+                            <!-- <div class="songbannertxt2">Pritam,Sanam,Stebin Ben and more</div> -->
+                        </div>
+
+                    </div>
+
+
+
+
+            </div>
+
+
+        </div>
+        <!-- Play bar  -->
+        <div class="playbar">
+
+            <div class="playleft">
+                <div style="margin-left: 5px;"><img height="55px" width="55px" src="music.jpg" alt="music"></div>
+                <div class="song_artist">
+
+                </div>
+            </div>
+
+            <div class="playmid">
+
+                <div class="playmid1">
+                    <div><img id="shuffle" src="shuffle.svg" alt="img"></div>
+                    <div><img id="previous" src="previous.svg" alt="img"></div>
+                    <div><img id="play" src="play.svg" alt="play"></div>
+                    <div><img id="next" src="next.svg" alt="img"></div>
+                    <div><img id="replay" src="replay.svg" alt="img"></div>
+                </div>
+
+                <div class="playmid2">
+                    <div class="currenttime" style="color: gray;"></div>
+                    <div class="seekbar"></div>
+                    <div class="totaltime" style="color: gray;"></div>
+                </div>
+
+
+            </div>
+            <div class="playright">
+                <div><img src="volume.svg" alt="img"></div>
+                <div class="range">
+                    <input type="range" id="volume" name="volume" min="0" max="100" />
+                </div>
+            </div>
+
+            <div class="playball1"></div>
+            <!-- <div class="playball2"></div> -->
+
+        </div>
+        <!-- cont div  -->
+    </div>
+
+</body>
+
+</html>

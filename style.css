@@ -1,0 +1,674 @@
+/* @import url(https://fonts.google.com/specimen/Poppins?query=popp); */
+
+
+.logo1 {
+    color: white;
+}
+
+body {
+    margin: 6px;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* width: 100vw; */
+    /* color: white; */
+}
+
+.cont {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 25vw 75vw;
+    gap: 6px;
+
+}
+
+.right {
+    grid-column: 2/3;
+    width: 77vw;
+    height: 86vh;
+
+    /* height: 86vh; */
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(20, 20, 20);
+    overflow-y: auto;
+
+}
+
+/* Left section  */
+
+.left {
+    display: grid;
+    /* position: sticky; */
+    grid-template-rows: 20vh 80vh;
+    gap: 6px;
+    background-color: black;
+    /* position: fixed; */
+    grid-column: 1/2;
+    width: 23vw;
+    height: 100vh;
+    border-radius: 8px;
+}
+
+/* left top  */
+.top {
+    grid-row: 1/2;
+    width: 25vw;
+    height: 20vh;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(20, 20, 20);
+    font-size: 12.5px;
+}
+
+.spot {
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.home {
+
+    margin-top: 5px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hometxt {
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: small;
+
+}
+
+.search {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchtxt {
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: small;
+    color: gray
+}
+
+.searchtxt:hover {
+    color: white;
+}
+
+.searchicon:hover {
+    fill: #ffffff;
+}
+
+
+/* left bottom  */
+.bottom {
+    grid-row: 2/3;
+    width: 25vw;
+    height: 80vh;
+    /* position:sticky; */
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(20, 20, 20);
+
+}
+
+.lib {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.libtxt {
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: small;
+    cursor: pointer;
+    color: gray
+}
+
+.libtxt:hover {
+    color: white;
+}
+
+.libicon:hover {
+    fill: #ffffff;
+}
+
+.close {
+    display: none;
+    margin-top: 5px;
+    position: absolute;
+    left: 21vw;
+    cursor: pointer;
+}
+
+.b2 {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.b2box {
+    width: 60px;
+    height: 20px;
+    padding-top: 5px;
+    background-color: #232323;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.b2box:hover {
+    background-color: #303030;
+}
+
+.liked {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.likedtxt {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+
+/* songlist  */
+
+.songlist {
+    height: 45vh;
+    width: 25vw;
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.songlist ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 20vw;
+    height: 50px;
+    border-radius: 4px;
+    /* border: 2px solid white; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+}
+
+.songname {
+    margin-right: 10px;
+    width: 165px;
+}
+
+.play2 {
+    margin-top: 10px;
+
+}
+
+.songlist ul li:hover {
+    background-color: #232323;
+
+}
+
+/* scrollbar  */
+.songlist::-webkit-scrollbar {
+    width: 10px;
+    display: hidden;
+    /* width of the entire scrollbar */
+}
+
+.songlist:hover::-webkit-scrollbar {
+    /* width of the entire scrollbar */
+    width: 10px;
+}
+
+.songlist:hover::-webkit-scrollbar-track {
+    background: rgb(20, 20, 20);
+    /* color of the tracking area */
+}
+
+.songlist:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(44, 43, 43);
+    /* color of the scroll thumb */
+}
+
+
+/* Right section  */
+
+
+/* scrollbar  */
+.right::-webkit-scrollbar {
+    width: 10px;
+    display: hidden;
+    /* width of the entire scrollbar */
+}
+
+.right:hover::-webkit-scrollbar {
+    /* width of the entire scrollbar */
+    width: 10px;
+}
+
+.right:hover::-webkit-scrollbar-track {
+    background: rgb(20, 20, 20);
+    /* color of the tracking area */
+}
+
+.right:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(44, 43, 43);
+    /* color of the scroll thumb */
+}
+
+
+
+.rtop {
+    height: 50px;
+    background-color: #101010;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 15fr 1fr 1fr;
+}
+
+.hamburger {
+    display: none;
+    grid-column: 1/2;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.fb {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
+    color: white;
+    text-align: center;
+}
+
+.b {
+    grid-column: 2/3;
+    margin-left: 15px;
+    margin-top: 13px;
+}
+
+.f {
+    grid-column: 3/4;
+    margin-top: 13px;
+}
+
+.signup {
+    grid-column: 5/6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.signup:hover {
+    color: white;
+    font-size: 12px;
+}
+
+.login {
+    grid-column: 6/7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: smaller;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 85px;
+    height: 38px;
+    margin-top: 5px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.login:hover {
+    width: 87px;
+    height: 40px;
+}
+
+.rbody {
+    height: 100vh;
+}
+
+/* songcards at top */
+
+.songcardcont {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 7px;
+
+}
+
+.songcard {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #232323;
+    display: flex;
+    cursor: pointer;
+}
+
+.songcard img {
+    border-radius: 4px;
+}
+
+.songcardtxt {
+    color: white;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    padding-bottom: 20px;
+
+}
+
+/* songbanner1 */
+
+h2 {
+    color: white;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.songbannercont {
+    margin: 15px;
+    margin-bottom: 70px;
+    display: flex;
+    gap: 15px;
+}
+
+.songbanner {
+    width: 150px;
+    height: 200px;
+    /* border: 2px solid white; */
+    border-radius: 5px;
+    padding: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.songbanner img {
+    border-radius: 5px;
+}
+
+.songbanner:hover {
+    background-color: #232323;
+}
+
+.songbannertxt1 {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.songbannertxt2 {
+    color: grey;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+
+/* Play bar  */
+.playbar {
+    width: 100vw;
+    height: 12vh;
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    z-index: 3;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.playleft {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    gap: 10px;
+    width: 40vw;
+}
+
+.song_artist {
+    /* width: 250px; */
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.playmid {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playmid1 {
+    display: flex;
+    gap: 17px;
+    cursor: pointer;
+}
+
+.playmid2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.seekbar {
+    width: 35vw;
+    height: 4px;
+    background-color: rgb(71, 70, 70);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.playball1 {
+    width: 5px;
+    height: 5px;
+    background-color: #808080;
+    border: 3px solid white;
+    border-radius: 100px;
+    position: relative;
+    right: 66%;
+    top: 14.5px;
+    cursor: pointer;
+}
+
+.playright {
+    width: 20vw;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.playball2 {
+    width: 5px;
+    height: 5px;
+    background-color: #808080;
+    border: 3px solid white;
+    border-radius: 100px;
+    position: absolute;
+    right: 195px;
+    bottom: 29px;
+    cursor: pointer;
+}
+
+/* responsiveness */
+
+@media (max-width:1200px) {
+
+    .left {
+        display: grid;
+        grid-template-rows: 12vh 88vh;
+        position: absolute;
+        z-index: 2;
+        left: -120%;
+        transition: all .3s;
+        width: 430px;
+    }
+
+    .top {
+        width: 430px;
+        height: 12vh;
+    }
+
+    .bottom {
+        width: 430px;
+        height: 88vh;
+    }
+
+    .songlist {
+        width: 420px;
+        height: 100vh;
+        /* overflow-y: auto; */
+    }
+
+
+    .songlist ul li {
+        width: 391px;
+    }
+
+    .songname {
+        width: 290px;
+    }
+
+    .close {
+        display: block;
+        margin-left: 175px;
+    }
+
+    .right {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+
+    }
+
+    .login {
+        margin-left: 30px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .playbar {
+        position: fixed;
+        z-index: 2;
+    }
+
+}
+
+@media (max-width:900px) {
+
+    .right {
+        height: 90%;
+    }
+
+    .songcardcont {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .songbannercont {
+        overflow-x: auto;
+    }
+
+    .songbannercont::-webkit-scrollbar {
+        display: none;
+    }
+
+    .playright {
+        display: none;
+    }
+
+    .playball2 {
+        display: none;
+    }
+
+
+
+}
+
+@media (max-width:700px) {
+    .right {
+        height: 94%;
+    }
+
+    .bottom {
+        height: 100vh;
+    }
+
+    .songcardcont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .songcard {
+        width: 150px;
+    }
+
+    .playmid2 {
+        display: none;
+    }
+
+    .playmid1 {
+        width: 60px;
+        gap: 7px;
+    }
+
+    .playball1 {
+        display: none;
+    }
+
+    .playbar {
+        height: 60px;
+    }
+}
